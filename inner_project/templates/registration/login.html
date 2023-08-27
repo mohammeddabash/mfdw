@@ -1,0 +1,17 @@
+<fieldset>
+        <legend>login</legend>
+         <form action="" method="POST">
+             {% csrf_token %}
+
+    {% for field in form %}
+      <p>
+        {{ field.label_tag }}<br>
+             <div>{{ field }}</div>
+
+
+      </p>
+    {% endfor %}
+              <input type="submit" value="Login" class="btn btn-default">
+          </form>
+</fieldset>
+

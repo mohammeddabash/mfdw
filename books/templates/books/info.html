@@ -1,0 +1,37 @@
+{%extends 'base.html'%}
+{%load static%}
+<head>
+    <title>{{ book_name }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="{% static 'bootstrap.css'%}"rel="stylesheet" type="text/css">
+    <link href="{% static 'bootstrap.min.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'style4.css'%}" rel="stylesheet" type="text/css">
+</head>
+
+
+
+{%block page%}
+<div class="wrapper" style="">
+ <div class="contain">
+
+      <div class="ul">
+{%if book.book_photo%}
+ <div class="img_book_home"><img class="img_book_home" src="{{book_photo.url}}" alt=""> </div>
+{%else%}
+ <div class="img_book_home"><img class="img_book_home" src="{%static 'logo.jpg'%}" alt=""> </div>
+{%endif%}
+  <div class="h4_book_home"> <h4 class="h4_book_home"><strong>{{ book_name }}</strong></h4></div>
+  <div class="p_book_home" ><p style=" width: 500px;">{{book_describtion}}</p></div>
+<div><p><i>{{pub_date}}</i>:تاريخ الصدور</p></div>
+<div><p><i>{{book_price}} USD</i>:السعر </p></div>
+<hr>
+          <hr>
+
+     <h1>pay with paypal</h1>
+<!-- writes out the form tag automatically -->
+{{ form.render }}
+      </div>
+ </div>
+</div>
+
+{%endblock page%}

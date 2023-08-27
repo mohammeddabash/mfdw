@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+<title>Accounts</title>
+
+{% block page %}
+<div style="margin-top:100px;margin-bottom:100px">
+{% if user.is_authenticated %}
+    <h2> Hi {{ user.username }}!</h2>
+
+    <a href="{%url 'logout'%}"><h3>logout</h3></a>
+    <a href="{%url 'password_reset'%}"><h3>reset your password</h3></a>
+
+
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{%url 'signup'%}"><h3>create account</h3></a>
+
+  <a href="{% url 'login' %}"><h3>login</h3></a>
+{% endif %}
+</div>
+{% endblock %}
+
+
+
+
+<!--
+  <form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="username" style=" font-size:15px">Username</label>
+      <input name="username" class="form-control" id="username" type="name">
+
+       <label for="first_name" style=" font-size:15px">First name</label>
+      <input name="first_name" class="form-control" id="first_name" type="name">
+
+       <label for="last_name" style=" font-size:15px">Last name</label>
+      <input name="last_name" class="form-control" id="last_name" type="name">
+
+      <label for="email" style=" font-size:15px">Email</label>
+      <input name="email" class="form-control" id="email" type="name">
+
+       <label for="password1" style=" font-size:15px">Password</label>
+      <input name="password1" class="form-control" id="password1" type="password">
+
+
+
+       <label for="password2" style=" font-size:15px">Password Confirm</label>
+      <input name="password2" class="form-control" id="password2" type="password">
+
+    <button type="submit" class="btn-primary"style="font-size:20px;text-align:center;margin:3px   2px" >Sign up</button>
+</div>
+  </form>-->

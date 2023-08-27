@@ -1,0 +1,68 @@
+{%load static%}
+<head>
+    <title>Books</title>
+    <link href="{% static 'bootstrap.css'%}"rel="stylesheet" type="text/css">
+    <link href="{% static 'bootstrap.min.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'style4.css'%}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+{%block page%}
+
+<form action="" method="post" style="margin-top:100px" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+
+    {{form}}
+         <input type="submit" value="add!" class="btn-primary">
+</form>
+  <!--  <div class="form-group" style="margin-top:80px">
+    <tr><th><label for="id_book_name">Book name:</label></th><td><input class="form-control"  type="text" name="book_name" maxlength="40" required id="id_book_name"></td></tr>
+
+    </div>
+    <div class="form-group">
+    <tr><th><label for="id_book_describtion">Book describtion:</label></th><td><textarea class="form-control" rows="5" name="book_describtion" cols="40" rows="10" maxlength="120" id="id_book_describtion"></textarea></td></tr>
+
+    </div>
+    <div class="form-group">
+    <tr><th><label for="id_book_photo">Book photo:</label></th><td><input class="form-control btn-dark" type="file" name="book_photo" accept="image/*" id="id_book_photo"></td></tr>
+
+    </div>
+    <div class="form-group">
+    <tr><th><label for="id_file">File:</label></th><td><input class="form-control" type="file" name="file" id="id_file"></td></tr>
+
+    </div>
+    <div class="form-group">
+    <tr><th><label for="id_book_link">Book link:</label></th><td><input class="form-control" type="text" name="book_link" maxlength="40" required id="id_book_link"></td></tr>
+
+    </div>
+    <div class="form-group">
+    <tr><th><label for="id_body_text">Body text:</label></th><td><textarea rows="5" type="hidden" class="form-control" name="body_text" cols="40" rows="10" maxlength="200" id="id_body_text"></textarea></td></tr>
+
+    </div>
+    <div class="form-group">
+    <tr><th><label for="id_book_download_link">Book download link:</label></th><td><input class="form-control" type="text" name="book_download_link" maxlength="200" id="id_book_download_link"></td></tr>
+
+    </div>
+    <div class="form-group">
+    <tr><th><label for="id_pub_date">Pub date:</label></th><td><input class="form-control" type="datetime-local" name="pub_date" id="id_pub_date"></td></tr>
+
+    </div>
+    <div class="form-group">
+    <tr><th><label for="id_category">Category:</label></th><td>
+        <select class="form-control" name="category" id="id_category">
+  <option value="book" selected class="form-control">book</option>
+
+  <option value="record" class="form-control">records</option>
+
+  <option value="lecture" class="form-control">lecture</option>
+
+         </select></td></tr>
+          </div>
+-->
+
+{%endblock page%}
+
+
+
+

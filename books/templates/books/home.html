@@ -1,0 +1,90 @@
+{%extends 'base.html'%}
+{% load static %}
+
+<!DOCTYPE html>
+{%block head%}
+<script>
+
+</script>
+{%endblock head%}
+<!-------
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark mynav fixed-top">
+
+  <a class="navbar-brand" href="/"><svg class="bi bi-house-fill" width="2.7em" height="2.7em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg></a>
+
+  <--- Links -->
+ <!-- <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/books">Books</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/our_services">السيرة الذاتية</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/contact_us">Contact US</a>
+      </li>
+
+    </ul>
+</nav>
+
+------------------------------------------------>
+{% block page %}
+
+<div class="row">
+ <div class="col-12" id="">
+
+
+    <img id="banner"src="{% static '2.jpg'%}">
+
+
+<center><a href="#content"><button  class="btn btn-primary mybtn"><b class="glow">Enter </b></button></a></center>
+ </div>
+</div>
+<!-- IDEA:  ------------------------------------------------ -->
+<div class="row">
+  <div class="col-12">
+  <div class="list-group" id="content">
+  <a href="/about" class="list-group-item list-group-item-action li"><p>السيرة الذاتية</p></a>
+  <a href="our_services" class="list-group-item list-group-item-action list-group-item-success li"><p>الخدمات</p></a>
+  <a href="contact_us" class="list-group-item list-group-item-action list-group-item-secondary li"><p>تواصل معنا</p></a>
+  <a href="/books" class="list-group-item list-group-item-action list-group-item-dark li"><p>كتب</p></a>
+  <a href="/lectures" class="list-group-item list-group-item-action list-group-item-primary li"><p>محضرات</p></a>
+  <a href="/records" class="list-group-item list-group-item-action list-group-item-dark li"><p>تسجيلات</p></a>
+  {%for year in years_list%}
+      <a href="{{year}}" class="list-group-item list-group-item-action list-group-item-dark li" style="padding_right:50px;margin-right:50px;width:90%"><p>{{year}}</p></a>
+  {%endfor%}
+
+
+
+
+
+
+   <li class="list-group-item d-flex justify-content-between align-items-center li">
+
+     <span class="badge badge-primary badge-pill" >{{ newest_books }}</span>
+  <a class="in" href="/{{now}}" >آخر الاصدارات</a>
+   </li>
+
+  </div>
+ </div>
+</div>
+
+</div>
+{% endblock page %}
+
+<!-- IDEA: --------------------------------------------- -->
+<div class="row">
+ <div class="col-12 ">
+    <footer class="footer">
+      <center>
+    <h4 class="foot_text">  &copy;  حقوق النشر محفوظة <br>الموقع الرسمي للدكتور أحمد ضبش </h4>
+  </center>
+    </footer>
+ </div>
+</div>
+
+</body>

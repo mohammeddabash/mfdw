@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{%load static%}
+    <link href="{% static 'style4.css'%}" rel="stylesheet" type="text/css">
+
+{% block page %}
+<div class="wrapper">
+    <h1>Payment done.</h1>
+     <a href="{{ book.file.url }}" target="_blank"><button class="btn-success btn_download">قراءة</button></a>
+      <a href="{{ book.file.url }}" target="_blank" download="download"><button class="btn-success btn_download">تنزيل</button></a>
+
+</div>
+{% endblock %}

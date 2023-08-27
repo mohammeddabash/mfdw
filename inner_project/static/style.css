@@ -1,0 +1,137 @@
+*{right:0px;
+left: 0px;
+padding-right: 0px;
+text-decoration: none;
+
+}
+
+a{
+  text-decoration: none;
+
+}
+
+
+.mynav{
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.mynav li{
+  margin-left: 20px
+}
+
+.mynav:hover{
+  color:#fff;
+  background-color:white;
+}
+
+
+.banner{
+  height: 620px;
+  width: 100%
+
+
+
+}
+.li{
+    height:40px;
+    font-size:20px
+}
+
+
+
+.mybtn{
+
+  margin-top: -80px;
+  height: 50px;
+  width:110px;
+  text-align: center;
+  font-size:20px;
+  font-family: arial;
+  font-weight: bold;
+
+}
+#mybtn:hover{
+     background-color:black;
+}
+
+.mybtn a{
+   color: white;
+   text-decoration: none;
+}
+#content{
+  width: 100%;
+  height: auto;
+  background-color:gray;
+  color: pink;
+
+}
+
+#a{
+  text-decoration: :none;
+
+}
+.list-group li{
+  empty-cells: hide;
+}
+
+footer{
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  color: gray;
+  bottom:0px;
+  padding: 22px;
+  margin-bottom: 0px;
+  font-family:cursive;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.footer:hover{
+  background-color:#ff4da6;
+  color:black;
+
+}
+footer:hover .foot_text{
+
+
+}
+ .foot_text{
+  margin-top:230px;
+  margin-left: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.glow {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+  }
+}
+
+fieldset {
+width: 350px;
+border: 1px solid #dcdcdc;
+border-radius: 10px;
+padding: 20px;
+text-align: right;}
+legend {
+background-color: #efefef;
+border: 1px solid #dcdcdc;
+border-radius: 10px;
+padding: 10px 20px;
+text-align: left;
+text-transform: uppercase;}

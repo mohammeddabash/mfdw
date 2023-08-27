@@ -1,0 +1,384 @@
+*{right:0px;
+left: 0px;
+padding-right: 0px;
+text-decoration: none;
+overflow-y=hidden;
+}
+
+a{
+  text-decoration: none;
+
+}
+.mynav:hover{
+  color:#fff;
+  background-color:white;
+}
+
+.mynav{
+  margin-bottom: 0px;
+  font-size: 20px;
+  height:60px;
+
+}
+
+
+
+.mynav li{
+  margin-left: 20px;
+
+}
+
+#banner{
+  height: 615px;
+  width: 100%;
+
+
+
+}
+.dropdown1 {
+  float: left;
+  overflow: hidden;
+  position:absolute
+}
+
+/* Dropdown button */
+.dropdown1 .dropbtn1 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content1 a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content1 a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+.mybtn{
+
+  margin-top: -100px;
+  height: 50px;
+  width:150px;
+  text-align: center;
+  font-size:20px;
+  font-family: arial;
+  font-weight: bold;
+
+}
+
+.mybtn:hover{
+   background-color: black
+}
+.mybtn:active{
+   background-color: gray
+}
+.mybtn:visited{
+   border: none;
+   background-color: pink
+}
+
+.mybtn a{
+   color: white;
+   text-decoration: none;
+}
+#content{
+  width: 100%;
+  height: auto;
+  background-color:gray;
+  color: pink;
+
+}
+.li{
+    height:40px;
+    font-size:15px;
+    empty-cells: hide;
+    font-weight:bold;
+}
+
+.li p{
+    float:right
+}
+
+.right{
+    float:right
+}
+
+.left{
+    float:left
+}
+
+#a{
+  text-decoration: :none;
+
+}
+.list-group li{
+  empty-cells: hide;
+}
+
+footer{
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  color: gray;
+  bottom:0px;
+  padding: 10px;
+  margin-bottom: 0px;
+  font-family:cursive;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+footer:hover{
+  background-color:blue;
+  color:black;
+
+}
+footer:hover .foot_text{
+
+
+}
+ .foot_text{
+  margin-top:230px;
+  margin-left: 0px;
+  display: inline-block;
+  text-align: center;
+}
+
+.glow {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+  }
+}
+
+/***************home page***********************/
+
+
+fieldset {
+width: 350px;
+border: 1px solid #dcdcdc;
+border-radius: 10px;
+padding: 20px;
+text-align: right;}
+legend {
+background-color: #efefef;
+border: 1px solid #dcdcdc;
+border-radius: 10px;
+padding: 10px 20px;
+text-align: left;
+text-transform: uppercase;}
+
+
+
+/* : ---------- book_home ------------- */
+
+.wrapper{
+  width:80%;
+  height:2000px;
+
+  background-color:	#ee5d6c;
+  font-family: arial;
+  font-size: .9em;
+  color: black;
+  margin-top:64px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:4px;
+  padding-right: 3px;
+  padding-top:4px;
+  border: 3px black double;
+  text-align:right;
+
+}
+ .ul{
+  font-size: 33px;
+  list-style: none;
+  padding-right: 10px;
+  padding-top: 0px;
+  float:right;
+  text-align:right;
+  font-family:arial;
+
+}
+
+
+.wrapper div .ul li{
+  font-size: 16px;
+  padding-right: 30px;
+
+}
+
+.img_book_home{
+  height: 200px;
+  width: 150px;
+  float:right;
+  empty-cells:hidden;
+
+}
+
+
+.h4_book_home{
+  display:inline;
+  vertical-align:top;
+  text-align:right;
+  margin-right:3px;
+  font-size:20px;
+  color:black;
+  empty-cells:hidden;
+  margin-top:0px;
+  float:right
+
+}
+.h4_book_home:hover{
+text-decoration:none;
+}
+
+.p_book_home{
+height:200px;
+width:250%;
+empty-cells:hidden;
+color:black;
+  height:auto;
+  width:auto;
+  font-size: 15px;
+  display: inline;
+  vertical-align:middle;
+  margin-right:0px;
+  position: relative;
+  float:right;
+  text-align:right;
+  margin-bottom:100px;
+  padding:3px;
+  margin-top: 100px
+  }
+
+.p_book_home p{
+
+}
+
+.item{
+  border:3px solid black;
+  border-bottom:3px solid black;
+  margin-bottom:10px;
+  z-index: 10;
+  height: 220px;
+  padding-top: 2px;
+  padding-right:3px;
+}
+
+
+.year{
+
+}
+
+.tt:hover{
+  color:white;
+  background-color:black;
+}
+
+/*----------------- book ----------*/
+.contain{
+  padding: 10px
+}
+
+.book_img{
+  height: 250px;
+  width: 175px;
+
+}
+
+.book_name{
+  display: inline;
+  vertical-align: top;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: 25px
+}
+
+.book_desc{
+  font-size: 10px;
+  display: inline;
+  vertical-align:middle;
+  position: relative;
+  top:-65px;
+  left:-28px;
+  font-size: 15px
+}
+
+.btn_download{
+  height: 50px;
+  width: 170px;
+  font-size: 20px;
+  float:right;
+}
+
+.btn_download:hover{
+  background-color: white;
+  color: green;
+
+
+}
+
+/*contact us**/
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+/* create page (form)*/
+
+
+
+
+
+/*newwww*/

@@ -1,0 +1,92 @@
+{%extends 'base.html'%}
+{%load static%}
+<!DOCTYPE html>
+<head>
+    <title>Books</title>
+    <link href="{% static 'bootstrap.css'%}"rel="stylesheet" type="text/css">
+    <link href="{% static 'bootstrap.min.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'style4.css'%}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<!-- IDEA: ------------------------------- -->
+<!--
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark mynav fixed-top">
+
+<a class="navbar-brand" href="/"><svg class="bi bi-house-fill" width="2.7em" height="2.7em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg></a>
+
+  <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/books">Books</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/our_services">Our Services</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/contact_us">Contact US</a>
+      </li>
+
+    </ul>
+</nav>
+-->
+<!--------------------------->
+    {% block page %}
+<div class="wrapper">
+    <!-- all books   -->
+  <div style="">
+      {%if year_now %}
+      <h1>احنا مش من المستقبل</h1>
+      {%else%}
+      {%if books_category_year%}
+
+       <ul class="ul">: اصدارات عام {{year}} في{{category}}
+    {% for b in books_category_year %}
+    <li>
+      <a href="b{{b.id}}">
+      <div class="item">
+
+    {%if b.book.book_photo%}
+ <div class="img_book_home"><img class="img_book_home" src="{{b.book_photo.url}}" alt=""> </div>
+{%else%}
+ <div class="img_book_home"><img class="img_book_home" src="{% static 'download.jpg' %}" alt=""> </div>
+{%endif%}
+    <div class="h4_book_home"> <h4 class="h4_book_home"><strong>{{ b.book_name }}</strong></h4></div>
+    <div class="p_book_home" ><p style="overflow:auto; width: 500px; height:150px;">{{b.book_describtion}}</p></div>
+</div>
+</a>
+
+  </li>
+<hr style="margin-top:230px;margin-bottom:20px">
+    {% endfor %}
+    </ul>
+         {%else%}
+         <h1 style="margin-top:20px;text-align:right"> لا توجد اصدارات لعام {{year}} في {{category}} </h1>
+      <hr/>
+      {% endif %}
+      {%endif%}
+  </div>
+</div>
+
+
+     {% endblock page %}
+
+
+<!-- IDEA: ----------------------------------------------
+
+
+<div class="row">
+ <div class="col-12 ">
+    <footer class="footer">
+      <center>
+    <h4 class="foot_text">copyright saved</h4>
+  </center>
+    </footer>
+ </div>
+</div>
+</body>
+-->
